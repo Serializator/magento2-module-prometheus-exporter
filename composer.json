@@ -1,0 +1,22 @@
+{
+    "name": "serializator/magento2-module-prometheus-exporter",
+    "description": "A module which adds additional REST APIs for collecting metrics from a Prometheus Exporter",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "email": "noreply@example.com",
+            "name": "Julian van den Berkmortel"
+        }
+    ],
+    "require": {
+        "magento/framework": "~103.0.0"
+    },
+    "autoload": {
+        "files": [ "src/registration.php" ],
+        "psr-4": {
+            "Serializator\\PrometheusExporter\\": "src"
+        }
+    }
+}
