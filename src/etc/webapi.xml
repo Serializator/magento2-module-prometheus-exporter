@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- TODO: do we want "/info" as the endpoint or "/environment" or something like "/environment_info"? -->
+    <route method="GET" url="/V1/metrics/info">
+        <service class="Serializator\PrometheusExporter\Api\Metrics\EnvironmentInfoQueryInterface" method="execute" />
+
+        <resources>
+            <resource ref="Serializator_PrometheusExporter::environment_info"/>
+        </resources>
+    </route>
+</routes>
