@@ -5,6 +5,7 @@
             <resource id="Magento_Backend::admin">
                 <resource id="Serializator_PrometheusExporter::metrics" title="Metrics" sortOrder="10" >
                     <resource id="Serializator_PrometheusExporter::environment_info" title="Environment Info" sortOrder="10" />
+                    <resource id="Serializator_PrometheusExporter::cron_jobs" title="Cron Jobs" sortOrder="20" />
                 </resource>
             </resource>
         </resources>

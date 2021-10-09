@@ -8,4 +8,12 @@
             <resource ref="Serializator_PrometheusExporter::environment_info"/>
         </resources>
     </route>
+
+    <route method="GET" url="/V1/metrics/cronjobs">
+        <service class="Serializator\PrometheusExporter\Api\Metrics\CronJobQueryInterface" method="execute" />
+
+        <resources>
+            <resource ref="Serializator_PrometheusExporter::cron_jobs" />
+        </resources>
+    </route>
 </routes>
