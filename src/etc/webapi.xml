@@ -16,4 +16,12 @@
             <resource ref="Serializator_PrometheusExporter::cron_jobs" />
         </resources>
     </route>
+
+    <route method="GET" url="/V1/metrics/orders">
+        <service class="Serializator\PrometheusExporter\Api\Metrics\OrdersQueryInterface" method="execute" />
+
+        <resources>
+            <resource ref="Serializator_PrometheusExporter::orders" />
+        </resources>
+    </route>
 </routes>

@@ -14,4 +14,14 @@
 
     <preference for="Serializator\PrometheusExporter\Api\Data\Metrics\CronJobInterface"
                 type="Serializator\PrometheusExporter\Model\Metrics\CronJob" />
+
+    <!-- Orders -->
+    <preference for="Serializator\PrometheusExporter\Api\Data\Metrics\OrdersInterface"
+                type="Serializator\PrometheusExporter\Model\Metrics\Orders" />
+
+    <preference for="Serializator\PrometheusExporter\Api\Metrics\OrdersQueryInterface"
+                type="Serializator\PrometheusExporter\Query\Metrics\OrdersQuery" />
+
+    <preference for="Serializator\PrometheusExporter\Api\Data\Metrics\Orders\TotalInterface"
+                type="Serializator\PrometheusExporter\Model\Metrics\Orders\Total" />
 </config>
