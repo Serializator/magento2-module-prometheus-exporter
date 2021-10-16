@@ -7,29 +7,29 @@ use Magento\Framework\App\ProductMetadataInterface;
 use Magento\Framework\App\State;
 use Serializator\PrometheusExporter\Api\Data\EnvironmentInfoInterface;
 use Serializator\PrometheusExporter\Api\EnvironmentInfoQueryInterface;
-use Serializator\PrometheusExporter\Model\EnvironmentInfoBuilderFactory;
+use Serializator\PrometheusExporter\Model\EnvironmentInfoFactory;
 
 class EnvironmentInfoQuery implements EnvironmentInfoQueryInterface {
     private ProductMetadataInterface $productMetadata;
     private State $state;
-    private EnvironmentInfoBuilderFactory $environmentInfoBuilderFactory;
+    private EnvironmentInfoFactory $environmentInfoFactory;
 
     public function __construct(
         ProductMetadataInterface $productMetadata,
         State $state,
-        EnvironmentInfoBuilderFactory $environmentInfoBuilderFactory
+        EnvironmentInfoFactory $environmentInfoFactory
     ) {
         $this->productMetadata = $productMetadata;
         $this->state = $state;
-        $this->environmentInfoBuilderFactory = $environmentInfoBuilderFactory;
+        $this->environmentInfoFactory = $environmentInfoFactory;
     }
 
     /** @inheritDoc */
     public function execute(): EnvironmentInfoInterface {
-        return $this->environmentInfoBuilderFactory->create()
-            ->setVersion($this->productMetadata->getVersion())
-            ->setEdition($this->productMetadata->getEdition())
-            ->setMode($this->state->getMode())
-            ->create();
+        return $this->environmentInfoFactory->create([
+            'version' => $this->productMetadata->getVersion(),
+            'edition' => $this->productMetadata->getEdition(),
+            'mode' => $this->state->getMode()
+        ]);
     }
 }
