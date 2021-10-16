@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Query\Metrics;
+namespace Serializator\PrometheusExporter\Query;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Sales\Model\ResourceModel\Order as OrderResource;
-use Serializator\PrometheusExporter\Api\Data\Metrics\OrdersInterface;
-use Serializator\PrometheusExporter\Api\Metrics\OrdersQueryInterface;
+use Serializator\PrometheusExporter\Api\Data\OrdersInterface;
+use Serializator\PrometheusExporter\Api\OrdersQueryInterface;
 use Serializator\PrometheusExporter\Exception\Query\OrderQueryException;
-use Serializator\PrometheusExporter\Model\Metrics\OrdersFactory;
-use Serializator\PrometheusExporter\Model\Metrics\Orders\TotalAggregate;
-use Serializator\PrometheusExporter\Model\Metrics\Orders\TotalAggregateFactory;
+use Serializator\PrometheusExporter\Model\OrdersFactory;
+use Serializator\PrometheusExporter\Model\Orders\TotalAggregate;
+use Serializator\PrometheusExporter\Model\Orders\TotalAggregateFactory;
 
 class OrdersQuery implements OrdersQueryInterface {
     private OrderResource $orderResource;

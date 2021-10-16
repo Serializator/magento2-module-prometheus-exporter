@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Model\Metrics\Orders;
+namespace Serializator\PrometheusExporter\Model\Orders;
 
 use InvalidArgumentException;
 use Magento\Framework\ObjectManagerInterface;

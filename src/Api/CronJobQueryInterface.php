@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Api\Metrics;
+namespace Serializator\PrometheusExporter\Api;
 
-use Serializator\PrometheusExporter\Api\Data\Metrics\CronJobInterface;
+use Serializator\PrometheusExporter\Api\Data\CronJobInterface;
 
 /**
  * Responsible for querying / retrieving cron jobs which are scheduled to run or already ran

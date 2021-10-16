@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Api\Data\Metrics;
+namespace Serializator\PrometheusExporter\Api\Data;
 
 /**
  * Represents a Data Transfer Object (DTO) containing information for the orders collector in the Prometheus exporter
@@ -13,7 +13,7 @@ interface OrdersInterface {
     /**
      * Get the total amount of orders, aggregated by a set of properties
      *
-     * @return \Serializator\PrometheusExporter\Api\Data\Metrics\Orders\TotalAggregateInterface[]
+     * @return \Serializator\PrometheusExporter\Api\Data\Orders\TotalAggregateInterface[]
      * @noinspection PhpFullyQualifiedNameUsageInspection
      */
     public function getTotal(): array;

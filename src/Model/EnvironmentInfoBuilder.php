@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Model\Metrics;
+namespace Serializator\PrometheusExporter\Model;
 
 /**
  * Using the "Builder Pattern" allows for a much more declarative way of creating a new instance of the

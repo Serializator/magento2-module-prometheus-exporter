@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Api\Data\Metrics\Orders;
+namespace Serializator\PrometheusExporter\Api\Data\Orders;
 
 /**
  * Represents a Data Transfer Object (DTO) containing information about the total amount of orders, aggregated by a set of properties

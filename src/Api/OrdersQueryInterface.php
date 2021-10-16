@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Api\Metrics;
+namespace Serializator\PrometheusExporter\Api;
 
-use Serializator\PrometheusExporter\Api\Data\Metrics\OrdersInterface;
+use Serializator\PrometheusExporter\Api\Data\OrdersInterface;
 use Serializator\PrometheusExporter\Exception\Query\OrderQueryException;
 
 /**

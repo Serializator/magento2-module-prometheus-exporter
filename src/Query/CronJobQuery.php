@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Query\Metrics;
+namespace Serializator\PrometheusExporter\Query;
 
-use Serializator\PrometheusExporter\Api\Data\Metrics\CronJobInterface;
-use Serializator\PrometheusExporter\Api\Metrics\CronJobQueryInterface;
+use Serializator\PrometheusExporter\Api\Data\CronJobInterface;
+use Serializator\PrometheusExporter\Api\CronJobQueryInterface;
 use Magento\Cron\Model\ResourceModel\Schedule as CronJobScheduleResource;
-use Serializator\PrometheusExporter\Model\Metrics\CronJob;
-use Serializator\PrometheusExporter\Model\Metrics\CronJobFactory;
+use Serializator\PrometheusExporter\Model\CronJob;
+use Serializator\PrometheusExporter\Model\CronJobFactory;
 
 class CronJobQuery implements CronJobQueryInterface {
     private CronJobFactory $cronJobFactory;

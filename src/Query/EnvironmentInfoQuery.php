@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Query\Metrics;
+namespace Serializator\PrometheusExporter\Query;
 
 use Magento\Framework\App\ProductMetadataInterface;
 use Magento\Framework\App\State;
-use Serializator\PrometheusExporter\Api\Data\Metrics\EnvironmentInfoInterface;
-use Serializator\PrometheusExporter\Api\Metrics\EnvironmentInfoQueryInterface;
-use Serializator\PrometheusExporter\Model\Metrics\EnvironmentInfoBuilderFactory;
+use Serializator\PrometheusExporter\Api\Data\EnvironmentInfoInterface;
+use Serializator\PrometheusExporter\Api\EnvironmentInfoQueryInterface;
+use Serializator\PrometheusExporter\Model\EnvironmentInfoBuilderFactory;
 
 class EnvironmentInfoQuery implements EnvironmentInfoQueryInterface {
     private ProductMetadataInterface $productMetadata;

@@ -2,7 +2,7 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <!-- TODO: do we want "/info" as the endpoint or "/environment" or something like "/environment_info"? -->
     <route method="GET" url="/V1/metrics/info">
-        <service class="Serializator\PrometheusExporter\Api\Metrics\EnvironmentInfoQueryInterface" method="execute" />
+        <service class="Serializator\PrometheusExporter\Api\EnvironmentInfoQueryInterface" method="execute" />
 
         <resources>
             <resource ref="Serializator_PrometheusExporter::environment_info"/>
@@ -10,7 +10,7 @@
     </route>
 
     <route method="GET" url="/V1/metrics/cronjobs">
-        <service class="Serializator\PrometheusExporter\Api\Metrics\CronJobQueryInterface" method="execute" />
+        <service class="Serializator\PrometheusExporter\Api\CronJobQueryInterface" method="execute" />
 
         <resources>
             <resource ref="Serializator_PrometheusExporter::cron_jobs" />
@@ -18,7 +18,7 @@
     </route>
 
     <route method="GET" url="/V1/metrics/orders">
-        <service class="Serializator\PrometheusExporter\Api\Metrics\OrdersQueryInterface" method="execute" />
+        <service class="Serializator\PrometheusExporter\Api\OrdersQueryInterface" method="execute" />
 
         <resources>
             <resource ref="Serializator_PrometheusExporter::orders" />

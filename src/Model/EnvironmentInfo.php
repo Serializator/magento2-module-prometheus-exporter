@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Model\Metrics;
+namespace Serializator\PrometheusExporter\Model;
 
 use Magento\Framework\DataObject;
-use Serializator\PrometheusExporter\Api\Data\Metrics\EnvironmentInfoInterface;
+use Serializator\PrometheusExporter\Api\Data\EnvironmentInfoInterface;
 
 /**
  * A Data Transfer Object (DTO) containing information about the Magento 2 environment

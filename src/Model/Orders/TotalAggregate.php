@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Model\Metrics\Orders;
+namespace Serializator\PrometheusExporter\Model\Orders;
 
-use Serializator\PrometheusExporter\Api\Data\Metrics\Orders\TotalAggregateInterface;
+use Serializator\PrometheusExporter\Api\Data\Orders\TotalAggregateInterface;
 
 class TotalAggregate implements TotalAggregateInterface {
     private int $storeId;

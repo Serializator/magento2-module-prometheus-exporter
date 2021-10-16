@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Model\Metrics;
+namespace Serializator\PrometheusExporter\Model;
 
-use Serializator\PrometheusExporter\Api\Data\Metrics\OrdersInterface;
-use Serializator\PrometheusExporter\Model\Metrics\Orders\TotalAggregate;
+use Serializator\PrometheusExporter\Api\Data\OrdersInterface;
+use Serializator\PrometheusExporter\Model\Orders\TotalAggregate;
 
 /**
  * A Data Transfer Object (DTO) containing information for the orders collector in the Prometheus exporter

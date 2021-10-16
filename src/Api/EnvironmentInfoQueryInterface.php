@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Api\Metrics;
+namespace Serializator\PrometheusExporter\Api;
 
-use Serializator\PrometheusExporter\Api\Data\Metrics\EnvironmentInfoInterface;
+use Serializator\PrometheusExporter\Api\Data\EnvironmentInfoInterface;
 
 /**
  * Responsible for querying / retrieving information about the Magento 2 environment

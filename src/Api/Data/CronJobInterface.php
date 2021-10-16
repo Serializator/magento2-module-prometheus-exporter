@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Serializator\PrometheusExporter\Api\Data\Metrics;
+namespace Serializator\PrometheusExporter\Api\Data;
 
 /**
  * Represents a Data Transfer Object (DTO) containing information about a cron job

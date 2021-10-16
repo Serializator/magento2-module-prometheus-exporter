@@ -2,26 +2,26 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
     <!-- Environment Info -->
-    <preference for="Serializator\PrometheusExporter\Api\Metrics\EnvironmentInfoQueryInterface"
-                type="Serializator\PrometheusExporter\Query\Metrics\EnvironmentInfoQuery" />
+    <preference for="Serializator\PrometheusExporter\Api\EnvironmentInfoQueryInterface"
+                type="Serializator\PrometheusExporter\Query\EnvironmentInfoQuery" />
 
-    <preference for="Serializator\PrometheusExporter\Api\Data\Metrics\EnvironmentInfoInterface"
-                type="Serializator\PrometheusExporter\Model\Metrics\EnvironmentInfo" />
+    <preference for="Serializator\PrometheusExporter\Api\Data\EnvironmentInfoInterface"
+                type="Serializator\PrometheusExporter\Model\EnvironmentInfo" />
 
     <!-- Cron Jobs -->
-    <preference for="Serializator\PrometheusExporter\Api\Metrics\CronJobQueryInterface"
-                type="Serializator\PrometheusExporter\Query\Metrics\CronJobQuery" />
+    <preference for="Serializator\PrometheusExporter\Api\CronJobQueryInterface"
+                type="Serializator\PrometheusExporter\Query\CronJobQuery" />
 
-    <preference for="Serializator\PrometheusExporter\Api\Data\Metrics\CronJobInterface"
-                type="Serializator\PrometheusExporter\Model\Metrics\CronJob" />
+    <preference for="Serializator\PrometheusExporter\Api\Data\CronJobInterface"
+                type="Serializator\PrometheusExporter\Model\CronJob" />
 
     <!-- Orders -->
-    <preference for="Serializator\PrometheusExporter\Api\Data\Metrics\OrdersInterface"
-                type="Serializator\PrometheusExporter\Model\Metrics\Orders" />
+    <preference for="Serializator\PrometheusExporter\Api\Data\OrdersInterface"
+                type="Serializator\PrometheusExporter\Model\Orders" />
 
-    <preference for="Serializator\PrometheusExporter\Api\Metrics\OrdersQueryInterface"
-                type="Serializator\PrometheusExporter\Query\Metrics\OrdersQuery" />
+    <preference for="Serializator\PrometheusExporter\Api\OrdersQueryInterface"
+                type="Serializator\PrometheusExporter\Query\OrdersQuery" />
 
-    <preference for="Serializator\PrometheusExporter\Api\Data\Metrics\Orders\TotalInterface"
-                type="Serializator\PrometheusExporter\Model\Metrics\Orders\Total" />
+    <preference for="Serializator\PrometheusExporter\Api\Data\Orders\TotalInterface"
+                type="Serializator\PrometheusExporter\Model\Orders\Total" />
 </config>
