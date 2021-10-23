@@ -24,4 +24,14 @@
 
     <preference for="Serializator\PrometheusExporter\Api\Data\Orders\TotalInterface"
                 type="Serializator\PrometheusExporter\Model\Orders\Total" />
+
+    <!-- Invoices -->
+    <preference for="Serializator\PrometheusExporter\Api\Data\InvoicesInterface"
+                type="Serializator\PrometheusExporter\Model\Invoices" />
+
+    <preference for="Serializator\PrometheusExporter\Api\InvoicesQueryInterface"
+                type="Serializator\PrometheusExporter\Query\InvoicesQuery" />
+
+    <preference for="Serializator\PrometheusExporter\Api\Data\Invoices\TotalInterface"
+                type="Serializator\PrometheusExporter\Model\Invoices\Total" />
 </config>

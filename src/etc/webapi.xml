@@ -24,4 +24,12 @@
             <resource ref="Serializator_PrometheusExporter::orders" />
         </resources>
     </route>
+
+    <route method="GET" url="/V1/metrics/invoices">
+        <service class="Serializator\PrometheusExporter\Api\InvoicesQueryInterface" method="execute" />
+
+        <resources>
+            <resource ref="Serializator_PrometheusExporter::invoices" />
+        </resources>
+    </route>
 </routes>
